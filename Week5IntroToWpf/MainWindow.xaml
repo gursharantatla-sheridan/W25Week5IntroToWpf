@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnClickMe" Content="Click Me" HorizontalAlignment="Left" Margin="87,75,0,0" VerticalAlignment="Top" Height="64" Width="124" Click="btnClickMe_Click"/>
+        <Button x:Name="btnClickMe" Content="Click Me" HorizontalAlignment="Left" Margin="400,140,0,0" VerticalAlignment="Top" Height="64" Width="124" Click="btnClickMe_Click"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="188,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" Height="32" GotFocus="txtName_GotFocus" LostFocus="txtName_LostFocus" />
+        <Label Content="Enter your name" HorizontalAlignment="Left" Margin="77,159,0,0" VerticalAlignment="Top" Height="32" Width="106"/>
 
     </Grid>
 </Window>

@@ -23,12 +23,26 @@ namespace Week5IntroToWpf
 
         private void btnClickMe_Click(object sender, RoutedEventArgs e)
         {
-            var result = MessageBox.Show("Hello world", "Message", MessageBoxButton.YesNo, MessageBoxImage.Information);
+            //var result = MessageBox.Show("Hello world", "Message", MessageBoxButton.YesNo, MessageBoxImage.Information);
 
-            if (result == MessageBoxResult.Yes)
-                MessageBox.Show("YES button clicked");
-            else
-                MessageBox.Show("NO button clicked");
+            //if (result == MessageBoxResult.Yes)
+            //    MessageBox.Show("YES button clicked");
+            //else
+            //    MessageBox.Show("NO button clicked");
+
+
+            string name = txtName.Text;
+            MessageBox.Show("Hello " + name);
+        }
+
+        private void txtName_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtName.Background = Brushes.LightBlue;
+        }
+
+        private void txtName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            txtName.Background = Brushes.White;
         }
     }
 }
